@@ -33,9 +33,9 @@ echo ""
 WORKDIR="./generated_app"
 WEBVIZ_STORAGE="webviz_storage"
 
-echo "Generate app"
-rm -rf generated_app &&
-    webviz build "${WEBVIZ_CONFIG}" --theme equinor --portable "${WORKDIR}"
+# echo "Generate app"
+# rm -rf generated_app &&
+#     webviz build "${WEBVIZ_CONFIG}" --theme equinor --portable "${WORKDIR}"
 
 #######################################################################################
 ### Radix needs to be able to load aggregated files. Unless agregated files are small enough to

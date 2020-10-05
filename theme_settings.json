@@ -1,9 +1,8 @@
 {
     "_assets": [
-        "/Users/ingeknudsen/.pyenv/versions/3.7.6/lib/python3.7/site-packages/webviz_config_equinor/assets/equinor_theme.css",
-        "/Users/ingeknudsen/.pyenv/versions/3.7.6/lib/python3.7/site-packages/webviz_config_equinor/assets/favicon.ico",
-        "/Users/ingeknudsen/.pyenv/versions/3.7.6/lib/python3.7/site-packages/webviz_config_equinor/assets/equinor_logo_animation.gif",
-        "/Users/ingeknudsen/.pyenv/versions/3.7.6/lib/python3.7/site-packages/webviz_config_equinor/assets/equinor_local.css"
+        "/usr/local/lib/python3.7/site-packages/webviz_config_equinor/assets/equinor_theme.css",
+        "/usr/local/lib/python3.7/site-packages/webviz_config_equinor/assets/equinor_logo_animation.gif",
+        "/usr/local/lib/python3.7/site-packages/webviz_config_equinor/assets/favicon.ico"
     ],
     "_csp": {
         "base-uri": "'self'",
@@ -26,8 +25,7 @@
         "prefetch-src": "'self'",
         "script-src": [
             "'self'",
-            "'unsafe-eval'",
-            "'sha256-jZlsGVOhUAIcH+4PVs7QuGZkthRMgvT2n0ilH6/zTM0='"
+            "'unsafe-eval'"
         ],
         "style-src": [
             "'self'",
@@ -46,6 +44,11 @@
     },
     "_plotly_theme": {
         "layout": {
+            "coloraxis": {
+                "colorbar": {
+                    "exponentformat": "SI"
+                }
+            },
             "colorscale": {
                 "diverging": [
                     [
@@ -136,11 +139,7 @@
                 "#FF1243",
                 "#243746",
                 "#007079",
-                "#D5EAF4",
-                "#E6FAEC",
-                "#FFE7D6",
                 "#80B7BC",
-                "#FF1243",
                 "#919BA2",
                 "#BE8091",
                 "#B2D4D7",
@@ -160,7 +159,13 @@
                 }
             },
             "paper_bgcolor": "rgba(0,0,0,0)",
-            "plot_bgcolor": "rgba(0,0,0,0)"
+            "plot_bgcolor": "rgba(0,0,0,0)",
+            "xaxis": {
+                "exponentformat": "SI"
+            },
+            "yaxis": {
+                "exponentformat": "SI"
+            }
         }
     },
     "theme_name": "equinor"

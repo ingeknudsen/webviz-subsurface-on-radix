@@ -6,9 +6,9 @@ RUN mv ./dash_app/hack/blob_storage/ ./dash_app/blob_storage && \
 
 RUN pip install dash_app/. && \
     pip install azure-storage-blob && \
-    pip install pandas~=0.24 && \
-    pip install webviz-subsurface --upgrade && \
     pip install libecl --upgrade
+
+RUN pip list
 
 CMD gunicorn \
     --access-logfile "-" \

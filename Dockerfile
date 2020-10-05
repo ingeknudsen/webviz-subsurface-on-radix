@@ -6,9 +6,6 @@ RUN mv ./dash_app/hack/blob_storage/ ./dash_app/blob_storage && \
 
 RUN pip install dash_app/. && \
     pip install azure-storage-blob && \
-    pip install python==3.6.9 && \
-    pip install pandas==0.24.2 && \
-    pip install webviz-subsurface --upgrade && \
     pip install libecl --upgrade
 
 RUN pip list

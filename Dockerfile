@@ -6,7 +6,8 @@ RUN mv ./dash_app/hack/blob_storage/ ./dash_app/blob_storage && \
 
 RUN pip install dash_app/. && \
     pip install azure-storage-blob && \
-    pip install libecl --upgrade
+    pip install libecl --upgrade && \
+    pip install opm
 
 RUN pip list
 

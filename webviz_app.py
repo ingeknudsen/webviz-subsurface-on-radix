@@ -18,8 +18,7 @@ import webviz_config
 import webviz_config.certificate
 from webviz_config.themes import installed_themes
 from webviz_config.common_cache import CACHE
-from webviz_config.webviz_store import WebvizStorage, WEBVIZ_STORAGE
-from blob_storage.webviz_blob_store import WEBVIZ_BLOB_STORAGE
+from webviz_config.webviz_store import WEBVIZ_STORAGE
 from webviz_config.webviz_assets import WEBVIZ_ASSETS
 
 import webviz_config.plugins as standard_plugins
@@ -60,7 +59,6 @@ CACHE.init_app(server)
 theme.adjust_csp({"script-src": app.csp_hashes()}, append=True)
 Talisman(server, content_security_policy=theme.csp, feature_policy=theme.feature_policy)
 
-WEBVIZ_STORAGE.get_stored_data = WEBVIZ_BLOB_STORAGE.get_stored_data
 WEBVIZ_STORAGE.use_storage = True
 WEBVIZ_STORAGE.storage_folder = Path(__file__).resolve().parent / "webviz_storage"
 

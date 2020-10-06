@@ -37,12 +37,12 @@ spec:
       environmentConfig:
         - environment: dev
           variables:
-            OAUTH2_PROXY_SCOPE: openid offline_access profile 23b07c34-ab93-4acf-968f-ba710a23f0b5/user_impersonation email
-            OAUTH2_PROXY_CLIENT_ID: 23b07c34-ab93-4acf-968f-ba710a23f0b5
+            OAUTH2_PROXY_SCOPE: openid offline_access profile 4aac8ce4-07e0-4a63-a06e-1235037e4d9c/user_impersonation email
+            OAUTH2_PROXY_CLIENT_ID: 4aac8ce4-07e0-4a63-a06e-1235037e4d9c
         - environment: blobfuse
           variables:
-            OAUTH2_PROXY_SCOPE: openid offline_access profile 23b07c34-ab93-4acf-968f-ba710a23f0b5/user_impersonation email
-            OAUTH2_PROXY_CLIENT_ID: 23b07c34-ab93-4acf-968f-ba710a23f0b5            
+            OAUTH2_PROXY_SCOPE: openid offline_access profile 4aac8ce4-07e0-4a63-a06e-1235037e4d9c/user_impersonation email
+            OAUTH2_PROXY_CLIENT_ID: 4aac8ce4-07e0-4a63-a06e-1235037e4d9c            
 
     - name: auth-state
       image: redis:5-alpine

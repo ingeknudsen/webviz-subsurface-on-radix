@@ -37,11 +37,11 @@ spec:
       environmentConfig:
         - environment: dev
           variables:
-            OAUTH2_PROXY_SCOPE: openid offline_access profile 4aac8ce4-07e0-4a63-a06e-1235037e4d9c/user_impersonation email
+            OAUTH2_PROXY_SCOPE: openid email offline_access
             OAUTH2_PROXY_CLIENT_ID: 4aac8ce4-07e0-4a63-a06e-1235037e4d9c
         - environment: blobfuse
           variables:
-            OAUTH2_PROXY_SCOPE: openid offline_access profile 4aac8ce4-07e0-4a63-a06e-1235037e4d9c/user_impersonation email
+            OAUTH2_PROXY_SCOPE: openid email offline_access
             OAUTH2_PROXY_CLIENT_ID: 4aac8ce4-07e0-4a63-a06e-1235037e4d9c            
 
     - name: auth-state

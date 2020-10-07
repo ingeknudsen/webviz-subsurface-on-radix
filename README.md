@@ -1,4 +1,4 @@
-# Prerequisites
+# Prerequisites.
 
 ## Creating app registration used for authentication
 

@@ -70,7 +70,7 @@ spec:
               cpu: "1000m"
         - environment: blobfuse
           volumeMounts:
-            - type: blob
+            - type: test
               name: webviz-data
               path: /home/appuser/dash_app/webviz_storage/
           resources:

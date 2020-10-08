@@ -69,10 +69,10 @@ spec:
               memory: "4G"
               cpu: "1000m"
         - environment: blobfuse
-          volumeMounts:
-            - type: blob
-              name: webviz-data
-              path: /home/appuser/dash_app/webviz_storage/
+          #volumeMounts:
+          #  - type: blob
+          #    name: webviz-data
+          #    path: /home/appuser/dash_app/webviz_storage/
           resources:
             requests:
               memory: "400Mi"

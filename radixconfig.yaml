@@ -71,7 +71,8 @@ spec:
         - environment: blobfuse
           volumeMounts:
             - type: blob
-              name: webviz-data
+              accountName: webvizonradix
+              container: webviz-data
               path: /home/appuser/dash_app/webviz_storage/
           resources:
             requests:
